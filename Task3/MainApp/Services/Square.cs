@@ -1,4 +1,4 @@
-public class Square : Shape
+public class Square : Rectange
 {
   public double _side = 1;
   public Square()
@@ -21,7 +21,14 @@ public class Square : Shape
   {
     _side = side;
   }
-
+  public void SetWidth(double side)
+  {
+    _side = side;
+  }
+  public void SetHeight(double side)
+  {
+    _side = side;
+  }
   public override double GetArea()
   {
     return _side * _side;

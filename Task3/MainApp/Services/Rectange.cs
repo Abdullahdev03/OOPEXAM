@@ -1,7 +1,7 @@
 public class Rectange : Shape
 {
-  public double _width;
-  public double _height;
+  protected double _width;
+  protected double _height;
   public Rectange()
   {
     
@@ -16,6 +16,11 @@ public class Rectange : Shape
     _width = width;
     _height = height;
   }
+
+  public Rectange(string color, bool filled) : base(color, filled)
+  {
+  }
+
   public double GetWidth()
   {
     return _width;
